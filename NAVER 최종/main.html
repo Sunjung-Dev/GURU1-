@@ -1,0 +1,1421 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>NAVER</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script>
+        document.domain = "naver.com", window.nmain = window.nmain || {}, window.nmain.supportFlicking = !1;
+        var nsc = "navertop.v4",
+            ua = navigator.userAgent;
+        window.nmain.isIE = navigator.appName && navigator.appName.indexOf("Explorer") > 0 && ua.toLocaleLowerCase().indexOf("msie 10.0") < 0, document.getElementsByTagName("html")[0].setAttribute("data-useragent", ua), window.nmain.isIE && (Object.create = function(n) {
+            function a() {}
+            return a.prototype = n, new a
+        })
+    </script>
+    <script>
+        var darkmode = false;
+        window.naver_corp_da = window.naver_corp_da || {
+            main: {}
+        }, window.naver_corp_da.main = window.naver_corp_da.main || {}, window.naver_corp_da.main.darkmode = darkmode
+    </script>
+</head>
+
+<body>
+    <div id="u_skip"> <a href="#newsstand"><span>뉴스스탠드 바로가기</span></a> <a href="#themecast"><span>주제별캐스트 바로가기</span></a>
+        <a href="#timesquare"><span>타임스퀘어 바로가기</span></a> <a href="#shopcast"><span>쇼핑캐스트 바로가기</span></a> <a href="#account"><span>로그인 바로가기</span></a>
+    </div>
+    <div id="wrap">
+        <div id="header" role="banner" class="">
+            <div class="special_bg">
+                <div class="group_flex">
+                    <div class="logo_area">
+                        <h1 class="logo_default">
+                            <a href="/" class="logo_naver"><span class="blind">네이버</span></a>
+                        </h1>
+                    </div>
+                    <div class="service_area">
+                        <a id="NM_set_home_btn" class="link_set" data-clk="top.mkhome">네이버를 시작페이지로</a>
+                        <i class="sa_bar"></i>
+                        <a class="link_jrnaver"><i class="ico_jrnaver"></i><span
+                class="blind">쥬니어네이버</span></a>
+                        <a class="link_happybin"><i
+                class="ico_happybin"></i><span class="blind">해피빈</span></a>
+                    </div>
+
+                    <div id="search" class="search_area" data-clk-prefix="sch">
+                        <form id="sform" name="sform">
+                            <fieldset>
+                                <legend class="blind">검색</legend>
+                                <select id="where" name="where" title="검색 범위 선택" class="blind">
+                  <option value="nexearch" selected="selected">통합검색</option>
+                  <option value="post">블로그</option>
+                  <option value="cafeblog">카페</option>
+                  <option value="cafe">- 카페명</option>
+                  <option value="article">- 카페글</option>
+                  <option value="kin">지식iN</option>
+                  <option value="news">뉴스</option>
+                  <option value="web">사이트</option>
+                  <option value="category">- 카테고리</option>
+                  <option value="site">- 사이트</option>
+                  <option value="movie">영화</option>
+                  <option value="webkr">웹문서</option>
+                  <option value="dic">사전</option>
+                  <option value="100">- 백과사전</option>
+                  <option value="endic">- 영어사전</option>
+                  <option value="eedic">- 영영사전</option>
+                  <option value="krdic">- 국어사전</option>
+                  <option value="jpdic">- 일본어사전</option>
+                  <option value="hanja">- 한자사전</option>
+                  <option value="terms">- 용어사전</option>
+                  <option value="book">책</option>
+                  <option value="music">음악</option>
+                  <option value="doc">전문자료</option>
+                  <option value="shop">쇼핑</option>
+                  <option value="local">지역</option>
+                  <option value="video">동영상</option>
+                  <option value="image">이미지</option>
+                  <option value="mypc">내PC</option>
+                  <optgroup label="스마트 파인더">
+                    <option value="movie">영화</option>
+                    <option value="auto">자동차</option>
+                    <option value="game">게임</option>
+                    <option value="health">건강</option>
+                    <option value="people">인물</option>
+                  </optgroup>
+                  <optgroup label="네이버 랩">
+                    <option>긍정부정검색</option>
+                  </optgroup>
+                </select>
+                                <input type="hidden" id="sm" name="sm" value="top_hty">
+                                <input type="hidden" id="fbm" name="fbm" value="0">
+                                <input type="hidden" id="acr" name="acr" value="" disabled="disabled">
+                                <input type="hidden" id="acq" name="acq" value="" disabled="disabled">
+                                <input type="hidden" id="qdt" name="qdt" value="" disabled="disabled">
+                                <input type="hidden" id="ie" name="ie" value="utf8">
+                                <input type="hidden" id="acir" name="acir" value="" disabled="disabled">
+                                <input type="hidden" id="os" name="os" value="" disabled="disabled">
+                                <input type="hidden" id="bid" name="bid" value="" disabled="disabled">
+                                <input type="hidden" id="pkid" name="pkid" value="" disabled="disabled">
+                                <input type="hidden" id="eid" name="eid" value="" disabled="disabled">
+                                <input type="hidden" id="mra" name="mra" value="" disabled="disabled">
+
+
+
+                                <div class="green_window" style="">
+                                    <input id="query" name="query" title="검색어 입력">
+                                </div>
+                                <button id="search_btn" title="검색" class="btn_submit">
+                  <span class="blind">검색</span>
+                  <span class="ico_search_submit"></span>
+                </button>
+                            </fieldset>
+                        </form>
+
+                        <a id="ke_kbd_btn" role="button" class="btn_keyboard"><span class="blind">한글 입력기</span><span class="ico_keyboard"></span></a>
+                        <div id="_nx_kbd"></div>
+                        <div class="autocomplete">
+                            <a role="button" id="nautocomplete" class="btn_arw _btn_arw fold"><span class="blind">자동완성 레이어</span><span
+                  class="ico_arr"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gnb">
+                <div id="NM_FAVORITE" class="gnb_inner">
+                    <div class="group_nav">
+                        <ul class="list_nav type_fix">
+                            <li class="nav_item">
+                                <a class="nav"><i class="ico_mail"></i>메일</a>
+                            </li>
+                            <li class="nav_item"><a href="cafe.html" class="nav">카페</a></li>
+                            <li class="nav_item"><a class="nav">블로그</a>
+                            </li>
+                            <li class="nav_item"><a class="nav">지식iN</a></li>
+                            <li class="nav_item"><a class="nav">쇼핑</a></li>
+                            <li class="nav_item"><a class="nav">Pay</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav"><i class="ico_tv"></i>TV</a>
+                            </li>
+                        </ul>
+                        <ul class="list_nav NM_FAVORITE_LIST">
+                            <li class="nav_item"><a class="nav">사전</a></li>
+                            <li class="nav_item"><a class="nav">뉴스</a></li>
+                            <li class="nav_item"><a class="nav">증권</a></li>
+                            <li class="nav_item"><a class="nav">부동산</a></li>
+                            <li class="nav_item"><a class="nav">지도</a></li>
+                            <li class="nav_item"><a class="nav">영화</a></li>
+                            <li class="nav_item"><a class="nav">VIBE</a>
+                            </li>
+                            <li class="nav_item"><a class="nav">책</a></li>
+                            <li class="nav_item"><a class="nav">웹툰</a></li>
+
+                        </ul>
+                        <ul class="list_nav type_empty"></ul>
+                        <a role="button" class="btn_more">더보기</a>
+                    </div>
+                    <div id="rtk" class="group_keyword">
+                        <div id="NM_RTK_ROLLING_WRAP" class="keyword_area">
+                            <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33; "><strong>1</strong><span style="color:#000"> 지금</span></div>
+                                    <div class="text">Caption Text</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33; "><strong>2</strong><span style="color:#000"> 당신은 </span></div>
+                                    <div class="text">Caption Two</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33;"><strong>3</strong><span style="color:#000"> 삼슌의 </span></div>
+                                    <div class="text">Caption three</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33; "><strong>4</strong><span style="color:#000"> 네이버</span></div>
+                                    <div class="text">Caption four</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33; "><strong>5</strong><span style="color:#000"> 페이지를</span></div>
+                                    <div class="text">Caption five</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33; "><strong>6</strong><span style="color:#000"> 보고있습니다. </span></div>
+                                    <div class="text">Caption five</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33; "><strong>7</strong><span style="color:#000"> 당신은 </span></div>
+                                    <div class="text">Caption five</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33; "><strong>8</strong><span style="color:#000"> 로그인을</span></div>
+                                    <div class="text">Caption five</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33; "><strong>9</strong><span style="color:#000"> 하러 가게</span></div>
+                                    <div class="text">Caption five</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div style="color:#00ab33; "><strong>10</strong><span style="color:#000"> 될 것입니다.</span></div>
+                                    <div class="text">Caption five</div>
+                                </div>
+
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <script>
+                                var slideIndex = 0;
+                                showSlides();
+
+                                function showSlides() {
+                                    var i;
+                                    var slides = document.getElementsByClassName("mySlides");
+                                    var dots = document.getElementsByClassName("dot");
+                                    for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";
+                                    }
+                                    slideIndex++;
+                                    if (slideIndex > slides.length) {
+                                        slideIndex = 1
+                                    }
+                                    for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" active", "");
+                                    }
+                                    slides[slideIndex - 1].style.display = "block";
+                                    dots[slideIndex - 1].className += " active";
+                                    setTimeout(showSlides, 2000);
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="container" role="main">
+                <div style="position:relative;width:1130px;margin:0 auto;z-index:11">
+                    <div id="da_top"></div>
+                    <div id="da_expwide"></div>
+                </div>
+                <div id="NM_INT_LEFT" class="column_left">
+                    <div id="veta_top"> <iframe id="da_iframe_time" name="da_iframe_time" data-veta-preview="main_time" title="광고" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" img src="ad1.jpg" width="750" height="135"> </iframe> <span class="veta_bd_t"></span>
+                        <span class="veta_bd_b"></span> <span class="veta_bd_l"></span> <span class="veta_bd_r"></span> </div>
+                    <div id="newsstand" class="sc_newscast">
+                        <h2 class="blind">뉴스스탠드</h2>
+                        <div id="NM_NEWSSTAND_HEADER" class="group_issue">
+                            <div class="issue_area"> <a class="link_media">연합뉴스</a>
+                                <div id="yna_rolling" class="list_issue">
+                                    <div class="eg-flick-viewport" style="position: relative; z-index: 0; overflow: hidden; min-width: 100%; height: 100%; touch-action: pan-x; user-select: none; -webkit-user-drag: none; width: 310px;">
+                                        <div class="eg-flick-camera" style="width: 100%; height: 100%; will-change: transform; transform: translate3d(0px, 0px, 0px);">
+                                            <div class="eg-flick-panel" style="position: absolute; top: 0px;"><a class="issue" data-clk="quickarticle">[팩트체크] '성노예' 부정 하버드 교수 위안부 논문 따져보니</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="direct_area"> <a class="link_news" data-clk="newshome">네이버뉴스</a>
+                                <a class="link_direct">연예</a>
+                                <a class="link_direct">스포츠</a>
+                                <a class="link_direct">경제</a>
+                            </div>
+                        </div>
+                        <div id="NM_NEWSSTAND_TITLE" class="group_title"> <a class="link_newsstand">뉴스스탠드</a>
+                            <div id="NM_NEWSSTAND_data_buttons" class="sort_area"> <a role="button" class="btn_sort">구독한 언론사</a> <a role="button" class="btn_sort sort_on">전체언론사</a> </div>
+                            <div id="NM_NEWSSTAND_view_buttons" class="set_area">
+                                <a class="btn_set"> <i class="ico_list"><span class="blind">리스트형</span></i></a>
+                                <a class="btn_set set_on"> <i class="ico_tile"><span class="blind">썸네일형</span></i></a>
+                                <a class="btn_set" data-clk="set" target="_blank"> <i class="ico_set"><span class="blind">설정</span></i></a>
+                            </div>
+                        </div>
+                        <div id="NM_NEWSSTAND_VIEW_CONTAINER" style="position:relative">
+                            <div id="NM_NEWSSTAND_DEFAULT_LIST" class="group_news" style="display:none" data-clk-prefix="nsd_all"> <a href="#" role="button" class="pm_btn_prev_l _NM_NEWSSTAND_LIST_prev_btn" data-clk-custom="prev"><i
+                    class="ico_btn"><span class="blind">이전</span></i></a> <a href="#" role="button" class="pm_btn_next_l _NM_NEWSSTAND_LIST_next_btn" data-clk-custom="next"><i class="ico_btn"><span
+                      class="blind">다음</span></i></a>
+                                <div class="list_view">
+                                    <div class="option_area">
+                                        <div class="list_option_wrap">
+                                            <ul class="list_option">
+                                                <li class="option_item" data-cateid="ct2"><a class="option" data-clk="daei">종합/경제</a>
+                                                </li>
+                                                <li class="option_item" data-cateid="ct3"><a class="option" data-clk="dtvcom">방송/통신</a>
+                                                </li>
+                                                <li class="option_item" data-cateid="ct4"><a class="option" data-clk="dit">IT</a></li>
+                                                <li class="option_item" data-cateid="ct5"><a class="option" data-clk="deng">영자지</a>
+                                                </li>
+                                                <li class="option_item" data-cateid="ct6"><a class="option" data-clk="dsporent">스포츠/연예</a>
+                                                </li>
+                                                <li class="option_item" data-cateid="ct7"><a class="option" data-clk="dmagtec">매거진/전문지</a>
+                                                </li>
+                                                <li class="option_item" data-cateid="ct8"><a class="option" data-clk="dloc">지역</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="_NM_NEWSSTAND_ARTICLE_CONTAINER" data-clk-sub="*a"></div>
+                                </div>
+                                <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_invalid" style="display:none" data-clk-sub="*a"> <a role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE"><i class="ico_close"></i><span
+                      class="blind">닫기</span></a>
+                                    <p class="popup_msg">해당 언론사 사정으로 접근이 일시 제한됩니다.</p>
+                                    <div class="popup_btn"> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE">확인</a>
+                                    </div>
+                                </div>
+                                <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_undescribe_confirm" style="display:none" data-clk-sub="*a"> <a role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE" data-clk="usclose"><i class="ico_close"></i><span class="blind">닫기</span></a>
+                                    <p class="popup_msg"><strong class="NM_NEWSSTAND_POPUP_PNAME"></strong>을(를)<br>구독해지 하시겠습니까?</p>
+                                    <div class="popup_btn"> <a role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CONFIRM" data-clk="usdone">확인</a> <a role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE" data-clk="uscancel">취소</a> </div>
+                                </div>
+                                <div class="ly_toast NM_NEWSSTAND_TOAST" style="display:none">
+                                    <p class="toast_msg">구독한 언론사에 추가되었습니다.</p>
+                                </div>
+                            </div>
+                            <div id="NM_NEWSSTAND_DEFAULT_THUMB" class="group_news"> <a role="button" class="pm_btn_prev_l _NM_UI_PAGE_PREV"><i class="ico_btn"><span class="blind">이전</span></i></a> <a href="#" role="button" class="pm_btn_next_l _NM_UI_PAGE_NEXT" style="display: none;"><i
+                    class="ico_btn"><span class="blind">다음</span></i></a>
+                                <div class="_NM_UI_PAGE_CONTAINER" style="height:100%;overflow:hidden" data-clk-sub="*p">
+                                    <div style="width: 750px; float: left; display: none;">
+                                        <div class="tile_view">
+                                            <div class="frame_area">
+                                                <i class="line to_right1"></i>
+                                                <i class="line to_right2"></i>
+                                                <i class="line to_right3"></i>
+                                                <i class="line to_bottom1"></i>
+                                                <i class="line to_bottom2"></i>
+                                                <i class="line to_bottom3"></i>
+                                                <i class="line to_bottom4"></i>
+                                                <i class="line to_bottom5"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div style="width: 750px; float: left; display: none;">
+                                        <div class="tile_view">
+                                            <div class="frame_area"> <i class="line to_right1"></i> <i class="line to_right2"></i> <i class="line to_right3"></i> <i class="line to_bottom1"></i> <i class="line to_bottom2"></i> <i class="line to_bottom3"></i> <i class="line to_bottom4"></i>                                                <i class="line to_bottom5"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="width: 750px; float: left;">
+                                        <div class="tile_view">
+                                            <div class="frame_area"> <i class="line to_right1"></i> <i class="line to_right2"></i> <i class="line to_right3"></i> <i class="line to_bottom1"></i> <i class="line to_bottom2"></i> <i class="line to_bottom3"></i> <i class="line to_bottom4"></i>                                                <i class="line to_bottom5"></i>
+                                            </div>
+                                            <div class="thumb_area">
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="057">
+                                                    <a href="#" class="thumb"> <img height="20" alt="MBN" class="news_logo" src="MBN.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="326">
+                                                    <a href="#" class="thumb"> <img height="20" alt="KBS World" class="news_logo" src="KBS.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="021">
+                                                    <a href="#" class="thumb"> <img height="20" alt="문화일보" class="news_logo" src="culturenews.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="073">
+                                                    <a href="#" class="thumb"> <img height="20" alt="스포츠서울" class="news_logo" src="sportsseoul.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="006">
+                                                    <a href="#" class="thumb"> <img height="20" alt="미디어오늘" class="news_logo" src="mediatoday.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="005">
+                                                    <a href="#" class="thumb"> <img height="20" alt="국민일보" class="news_logo" src="publicnews.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="032">
+                                                    <a href="#" class="thumb"> <img height="20" alt="경향신문" class="news_logo" src="경향신문.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="356">
+                                                    <a href="#" class="thumb"> <img height="20" alt="게임메카" class="news_logo" src="gamemeca.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="024">
+                                                    <a href="#" class="thumb"> <img height="20" alt="매경이코노미" class="news_logo" src="economy.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="539">
+                                                    <a href="#" class="thumb"> <img height="20" alt="위키트리" class="news_logo" src="wikitree.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="809">
+                                                    <a href="#" class="thumb"> <img height="20" alt="미디어펜" class="news_logo" src="mediapen.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="932">
+                                                    <a href="#" class="thumb"> <img height="20" alt="CEO스코어데일리" class="news_logo" src="CEOscoredaily.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="967">
+                                                    <a href="#" class="thumb"> <img height="20" alt="코리아쉬핑가제트" class="news_logo" src="shippinggazette.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="529">
+                                                    <a href="#" class="thumb"> <img height="20" alt="엠스플뉴스" class="news_logo" src="msplenews.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="924">
+                                                    <a href="#" class="thumb"> <img height="20" alt="인벤" class="news_logo" src="inven.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="953">
+                                                    <a href="#" class="thumb"> <img height="20" alt="디지털투데이" class="news_logo" src="digitaltoday.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="802">
+                                                    <a href="#" class="thumb"> <img height="20" alt="스포츠Q" class="news_logo" src="sportsQ.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="972">
+                                                    <a href="#" class="thumb"> <img height="20" alt="PD저널" class="news_logo" src="PDjournal.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="396">
+                                                    <a href="#" class="thumb"> <img height="20" alt="스포츠월드" class="news_logo" src="sportsword.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="384">
+                                                    <a href="#" class="thumb"> <img height="20" alt="한국대학신문" class="news_logo" src="koreauninews.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="814">
+                                                    <a href="#" class="thumb"> <img height="20" alt="미주한국일보" class="news_logo" src="koreatimesamerica.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="243">
+                                                    <a href="#" class="thumb"> <img height="20" alt="이코노미스트" class="news_logo" src="economist.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="822">
+                                                    <a href="#" class="thumb"> <img height="20" alt="프라임경제" class="news_logo" src="primeeconomy.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <div class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid" data-pid="968">
+                                                    <a href="#" class="thumb"> <img height="20" alt="한국금융신문" class="news_logo" src="koreafinance.png" loading="lazy">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div id="NM_NEWSSTAND_MY_LIST" class="group_news" style="display:none" data-clk-prefix="nsd_myn"> <a href="#" role="button" class="pm_btn_prev_l _NM_NEWSSTAND_LIST_prev_btn" data-clk-custom="prev"><i
+                    class="ico_btn"></i><span class="blind">이전</span></a> <a href="#" role="button" class="pm_btn_next_l _NM_NEWSSTAND_LIST_next_btn" data-clk-custom="next"><i class="ico_btn"></i><span
+                    class="blind">다음</span><span class="blind">다음</span></a>
+                                <div class="list_view">
+                                    <div class="option_area">
+                                        <div class="list_option_wrap">
+                                            <ul class="list_option _NM_NEWSSTAND_MY_presslist">
+                                                <!-- nvpaperlist:empty -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="_NM_NEWSSTAND_ARTICLE_CONTAINER" data-clk-sub="*a"> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- EMPTY -->
+                    <div id="NM_THEMECAST_CONTENTS_CONTAINER">
+                        <div id="themecast" class="sc_themecast id_bboom">
+                            <h2 class="blind">주제별 캐스트</h2>
+                            <div class="theme_head">
+                                <div class="group_title">
+                                    <div class="title_area">
+                                        <strong class="title">오늘 읽을만한 글</strong><span class="dsc">주제별로 분류된 다양한 글 모음</span>
+                                    </div>
+                                    <div class="info_area">
+
+                                        <span class="info"><strong class="new">1,797</strong> 개의 글</span>
+
+                                        <a id="NM_THEME_EDIT_SET" href="#" role="button" class="btn_set" data-clk="tca.like">관심주제 설정</a>
+                                    </div>
+                                </div>
+                                <div class="theme_fix_wrap">
+                                    <div id="NM_THEME_CATE_GROUPS" class="group_category" data-demo-key="default" data-nm-ui="page_slide">
+                                        <div class="main_category">
+                                            <a href="#" role="button" class="pm_btn_prev NM_THEME_PREV" data-clk="tct.prev">
+                                                <i class="ico_btn"><span class="blind">이전</span></i>
+                                            </a>
+                                            <a href="#" role="button" class="pm_btn_next NM_THEME_NEXT" data-clk="tct.next">
+                                                <i class="ico_btn"><span class="blind">다음</span></i>
+                                            </a>
+                                            <div id="NM_THEME_CATE_FLICK" class="_NM_UI_PAGE_CONTAINER">
+                                                <div class="eg-flick-viewport" style="position: relative; z-index: 5; overflow: hidden; min-height: 100%; width: 100%; touch-action: pan-y; user-select: none; -webkit-user-drag: none; height: 49px;">
+                                                    <div class="eg-flick-camera" style="width: 100%; height: 100%; will-change: transform; transform: translate3d(0px, 0px, 0px);">
+                                                        <div style="width: 750px; position: absolute; left: 0px;" class="eg-flick-panel">
+                                                            <ul class="list_category" role="tablist">
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_enter" aria-selected="false" data-clk="tct.tvc" data-panel-code="ENTER">엔터</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_sports" aria-selected="false" data-clk="tct.spo" data-panel-code="SPORTS">스포츠</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_cargame" aria-selected="false" data-clk="tct.aut" data-panel-code="CARGAME">자동차</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_bboom" aria-selected="true" data-clk="tct.web" data-panel-code="BBOOM">웹툰</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_finance" aria-selected="false" data-clk="tct.fin" data-panel-code="FINANCE">경제M</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_living" aria-selected="false" data-clk="tct.fod" data-panel-code="LIVING">푸드</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_gameapp" aria-selected="false" data-clk="tct.gam" data-panel-code="GAMEAPP">게임</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_movie" aria-selected="false" data-clk="tct.mov" data-panel-code="MOVIE">영화</a>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div style="width: 750px; position: absolute; left: 750px;" class="eg-flick-panel">
+                                                            <ul class="list_category" role="tablist">
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_job" aria-selected="false" data-clk="tct.job" data-panel-code="JOB">JOB&amp;</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_ittech" aria-selected="false" data-clk="tct.tec" data-panel-code="ITTECH">테크</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_travel" aria-selected="false" data-clk="tct.tra" data-panel-code="TRAVEL">여행+</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_science" aria-selected="false" data-clk="tct.sci" data-panel-code="SCIENCE">과학</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_livinghome" aria-selected="false" data-clk="tct.lif" data-panel-code="LIVINGHOME">리빙</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_health" aria-selected="false" data-clk="tct.hea" data-panel-code="HEALTH">건강</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_business" aria-selected="false" data-clk="tct.bsn" data-panel-code="BUSINESS">비즈니스</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_wedding" aria-selected="false" data-clk="tct.wed" data-panel-code="WEDDING">연애·결혼</a>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div style="width: 750px; position: absolute; left: 1500px;" class="eg-flick-panel">
+                                                            <ul class="list_category" role="tablist">
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_culture" aria-selected="false" data-clk="tct.bok" data-panel-code="CULTURE">책문화</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_momkids" aria-selected="false" data-clk="tct.mom" data-panel-code="MOMKIDS">부모i</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_law" aria-selected="false" data-clk="tct.law" data-panel-code="LAW">법률</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_beauty" aria-selected="false" data-clk="tct.bty" data-panel-code="BEAUTY">패션뷰티</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_animal" aria-selected="false" data-clk="tct.ani" data-panel-code="ANIMAL">동물공감</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_design" aria-selected="false" data-clk="tct.des" data-panel-code="DESIGN">디자인</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_china" aria-selected="false" data-clk="tct.chn" data-panel-code="CHINA">중국</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_farm" aria-selected="false" data-clk="tct.far" data-panel-code="FARM">FARM</a>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div style="width: 750px; position: absolute; left: 2250px;" class="eg-flick-panel">
+                                                            <ul class="list_category" role="tablist">
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_show" aria-selected="false" data-clk="tct.sow" data-panel-code="SHOW">공연전시</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_with" aria-selected="false" data-clk="tct.pub" data-panel-code="WITH">함께N</a>
+                                                                </li>
+
+                                                                <li class="category_item" role="presentation">
+
+
+                                                                    <a href="#" role="tab" class="_NM_THEME_CATE tab id_school" aria-selected="false" data-clk="tct.scl" data-panel-code="SCHOOL">스쿨잼</a>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="theme_cont" data-panel-code="BBOOM">
+                                <div class="group_topstory">
+
+                                    <div class="topstory_inner">
+                                        <div class="topstory_view ">
+                                            <a class="topstory_thumb">
+                                                <img src="webtoon1.jpeg" alt="신작 'A.I. 닥터' 1화 보러가기" width="364" height="180" loading="lazy">
+                                                <span class="thumb_bd"></span>
+                                            </a>
+                                            <a class="topstory_info">
+                                                <em class="theme_category">웹툰</em>
+                                                <strong class="title  ">신작 'A.I. 닥터' 1화 보러가기</strong>
+                                                <p class="desc">최첨단 인공지능, 내과의사의 뇌에 자리잡다 </p>
+                                                <div class="source_area">
+                                                    <span class="source"><span class="source_inner">한산이가, ZAINO / 쿠큐</span></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="topstory_inner">
+                                        <div class="list_theme_wrap type_topstory">
+                                            <ul class="list_theme">
+                                                <li class="theme_item">
+                                                    <a class="theme_thumb">
+                                                        <img src="webtoon2.jpeg" alt="금요일에 누가 웹툰을 봐" width="98" height="98" loading="lazy">
+                                                        <span class="thumb_bd"></span>
+                                                    </a>
+                                                    <a class="theme_info" t>
+                                                        <em class="theme_category">웹툰</em>
+                                                        <strong class="title">금요일에 누가 웹툰을 봐 <br>제 이름이 누입니다</strong>
+                                                        <div class="source_box">
+                                                            <span class="source"><span class="source_inner">요일별 웹툰</span></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+                                                <li class="theme_item">
+                                                    <a class="theme_thumb">
+                                                        <img src="webtoon3.jpeg" alt="수상한 신들과의 협업," width="98" height="98" loading="lazy">
+                                                        <span class="thumb_bd"></span>
+                                                    </a>
+                                                    <a class="theme_info">
+                                                        <em class="theme_category">웹툰</em>
+                                                        <strong class="title">수상한 신들과의 협업, <br>얘네 믿어도 되는 건가?</strong>
+                                                        <div class="source_box">
+                                                            <span class="source"><span class="source_inner">방과후 선녀</span></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+                                                <li class="theme_item">
+
+
+                                                    <a class="theme_thumb">
+                                                        <img src="webtoon4.png" alt="친구가 죽은 이유는?" width="98" height="98" loading="lazy">
+                                                        <span class="thumb_bd"></span>
+                                                    </a>
+                                                    <a class="theme_info">
+                                                        <em class="theme_category">웹툰</em>
+                                                        <strong class="title">친구가 죽은 이유는? <br>시간 능력자들의 싸움!</strong>
+                                                        <div class="source_box">
+                                                            <span class="source"><span class="source_inner">빨리감기</span></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="theme_link">
+                                    <a class="link_bboom" data-clk="tcc_web.short1" target="_blank">웹툰 홈 바로가기</a>
+
+                                    <ul class="list_service">
+                                        <li class="service_item" data-gdid="PC-THEME-BBOOM-SHORTCUT[materials][1]">
+                                            <a class="service" data-clk="tcc_web.short3" target="_blank">요일별 웹툰</a>
+                                        </li>
+                                        <li class="service_item" data-gdid="PC-THEME-BBOOM-SHORTCUT[materials][2]">
+                                            <a class="service" data-clk="tcc_web.short4" target="_blank">베스트 도전</a>
+                                        </li>
+                                        <li class="service_item" data-gdid="PC-THEME-BBOOM-SHORTCUT[materials][3]">
+                                            <a class="service" data-clk="tcc_web.short5" target="_blank">도전만화</a>
+                                        </li>
+                                        <li class="service_item" data-gdid="PC-THEME-BBOOM-SHORTCUT[materials][4]">
+                                            <a class="service" data-clk="tcc_web.short6" target="_blank">시리즈 장르소설</a>
+                                        </li>
+                                        <li class="service_item" data-gdid="PC-THEME-BBOOM-SHORTCUT[materials][5]">
+                                            <a class="service" data-clk="tcc_web.short7" target="_blank">시리즈 만화</a>
+                                        </li>
+                                        <li class="service_item" data-gdid="PC-THEME-BBOOM-SHORTCUT[materials][6]">
+                                            <a class="service" data-clk="tcc_web.short8" target="_blank">웹소설</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group_theme _NM_THEME_TAB" data-block-id="5e5755a1d6902f284e278888" data-block-code="PC-THEME-BBOOM-API-ALL" data-block-type="BLOCKS" data-template-code="PC-THEME-BBOOM-API-ALL" data-tab-cookie="theme-bboom-api-all" data-tab-cookie-expire="1"
+                                    data-tab-list="1612480156534" data-inited="true">
+                                    <div class="theme_title">
+                                        <strong class="title">인기 급상승</strong>
+                                        <ul class="title_sub_tab" role="tablist">
+                                            <li class="tab_item tab_on" role="presentation">
+                                                <a href="#" role="tab" class="tab" aria-selected="true" data-tab="theme-bboom-api-all-0" data-clk="tcc_web.hottab1">웹툰</a>
+                                            </li>
+                                            <li class="tab_item" role="presentation">
+                                                <a href="#" role="tab" class="tab" aria-selected="false" data-tab="theme-bboom-api-all-1" data-clk="tcc_web.hottab2">시리즈 장르소설</a>
+                                            </li>
+                                            <li class="tab_item" role="presentation">
+                                                <a href="#" role="tab" class="tab" aria-selected="false" data-tab="theme-bboom-api-all-2" data-clk="tcc_web.hottab3">시리즈 만화</a>
+                                            </li>
+                                            <li class="tab_item" role="presentation">
+                                                <a href="#" role="tab" class="tab" aria-selected="false" data-tab="theme-bboom-api-all-3" data-clk="tcc_web.hottab4">웹소설</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="chart_view_wrap type_webtoon" data-tab-panel="theme-bboom-api-all-0" aria-selected="true">
+
+                                        <div class="chart_view">
+
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont1">
+                                                <div class="chart_rank">
+                                                    <em class="rank">1<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon5.jpeg" alt="외모지상주의" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">외모지상주의</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+                                박태준
+                              </span><span class="dsc">325화 클럽 [01]</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont2">
+                                                <div class="chart_rank">
+                                                    <em class="rank">2<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon6.jpeg" alt="갓 오브 하이스쿨" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">갓 오브 하이스쿨</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+                                박용제
+                              </span><span class="dsc">499화</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont3">
+                                                <div class="chart_rank">
+                                                    <em class="rank">3<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon7.jpeg" alt="재혼 황후" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">재혼 황후</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+                                알파타르트,
+                                숨풀
+                              </span><span class="dsc">67화</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont4">
+                                                <div class="chart_rank">
+                                                    <em class="rank">4<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon8.jpeg" alt="데드퀸" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">데드퀸</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+                                김규삼
+                              </span><span class="dsc">22화</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont5">
+                                                <div class="chart_rank">
+                                                    <em class="rank">5<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon9.jpeg" alt="1초" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">1초</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+                                시니,
+                                광운
+                              </span><span class="dsc">99화 외전 : 코로나 바이러스 (1) </span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="chart_view">
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont6">
+                                                <div class="chart_rank">
+                                                    <em class="rank">6<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon10.jpeg" alt="개를 낳았다" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">개를 낳았다</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+
+                                이선
+                              </span><span class="dsc">시즌2 38화</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont7">
+                                                <div class="chart_rank">
+                                                    <em class="rank">7<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon11.jpeg" alt="여성전용헬스장 진달래짐" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">여성전용헬스장 진달래짐</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+                                유기
+                              </span><span class="dsc">12화: 들어올려라, 중량 추가!</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont8">
+                                                <div class="chart_rank">
+                                                    <em class="rank">8<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon12.jpeg" alt="걸어서 30분" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">걸어서 30분</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+                                이온도
+                              </span><span class="dsc">167화 그림 모델</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont9">
+                                                <div class="chart_rank">
+                                                    <em class="rank">9<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon13.jpeg" alt="낙향문사전" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">낙향문사전</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+                                바킹독,
+                                고기산적
+                              </span><span class="dsc">39화. 찻잔 속의 태풍</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="chart_area" target="_blank" data-clk="tcc_web.hottab1cont10">
+                                                <div class="chart_rank">
+                                                    <em class="rank">10<span class="blind">위</span></em>
+                                                    <div class="state">
+                                                        <i class="ico_dash"><span class="blind">유지</span></i>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_info">
+                                                    <div class="thumb_box">
+                                                        <img src="webtoon14.jpeg" alt="구남친이 내게 반했다" height="50" width="50"><span class="thumb_bd"></span>
+                                                    </div>
+                                                    <div class="info_box">
+                                                        <strong class="title">구남친이 내게 반했다</strong>
+                                                        <div class="dsc_wrap"><span class="dsc">
+                                강하다,
+                                희똑
+                              </span><span class="dsc">33화</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group_theme" data-block-id="" data-block-code="PC-THEME-BBOOM-IMG-0" data-block-type="MATERIALS" data-template-code="3X3" data-page="1">
+
+                                    <div class="media_view_wrap type_column">
+                                        <div class="media_view">
+
+                                            <a class="media_area" data-gdid="CAS_f5006906-6600-11eb-aec9-b3ec357bf063" data-clk="tcc_web.list1cont1" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰1_독립일기.PNG" alt="슈니가 좋은 이유는 역시 이거죠!!" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">슈니가 좋은 이유는 역시 이거죠!!</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">19시간 전</span>
+                                                            <span class="source"><span class="source_inner">슈니일기</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_dcbd80d9-65fd-11eb-a31a-83388b8b9868" data-clk="tcc_web.list1cont2" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰2_완벽한부부는없다.PNG" alt="네가 우는데 내가 어떻게 떠날까" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">네가 우는데 내가 어떻게 떠날까</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">18시간 전</span>
+                                                            <span class="source"><span class="source_inner">완벽한 부부는 없다</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_f5006905-6600-11eb-aec9-891b7d83231a" data-clk="tcc_web.list1cont3" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰3_하백의신부.PNG" alt="나는 수신의 슈니다" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">나는 수신의 슈니다</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">19시간 전</span>
+                                                            <span class="source"><span class="source_inner">하백의 신부</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_15d59c17-65f7-11eb-99a1-9d82cfcc00be" data-clk="tcc_web.list1cont4" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰4_파멸플래그.PNG" alt="파멸 플래그 슈니로 환생!" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">파멸 플래그 슈니로 환생!</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">18시간 전</span>
+                                                            <span class="source"><span class="source_inner">여성향 게임의 파멸 플래그</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_15d59c19-65f7-11eb-99a1-b73de9fbd740" data-clk="tcc_web.list1cont5" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰5_웹소설.PNG" alt="이제 울지 마, 슈니가 옆에 있잖아" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">이제 울지 마, 슈니가 옆에 있잖아</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">18시간 전</span>
+                                                            <span class="source"><span class="source_inner">김비서</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_15d59c16-65f7-11eb-99a1-ab37e864845c" data-clk="tcc_web.list1cont6" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰6_호리미야.PNG" alt="둑흔둑흔 스쿨로맨스" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">둑흔둑흔 스쿨로맨스</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">18시간 전</span>
+                                                            <span class="source"><span class="source_inner">호리미야</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_86a3bb8c-65e7-11eb-a31a-a9583cd83c8f" data-clk="tcc_web.list1cont7" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰7_도깨비.PNG" alt="여긴 도깨비 세계?!" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">여긴 도깨비 세계?!</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">18시간 전</span>
+                                                            <span class="source"><span class="source_inner">잡아먹지 마세요, 도깨비님!</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_19fd9aea-65f7-11eb-99a1-27fffabae569" data-clk="tcc_web.list1cont8" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰8_좋은데어떡해.PNG" alt="이대로 올라갈래요, 아니면 헤어질래요?" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">이대로 올라갈래요, 아니면 헤어질래요?</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">어제</span>
+                                                            <span class="source"><span class="source_inner">좋은데 어떡해</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_15d59c18-65f7-11eb-99a1-81c764b284ce" data-clk="tcc_web.list1cont9" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰9_급식아빠.PNG" alt="딸을 지키기 위한 환생한 슈니의 활약" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">딸을 지키기 위한 환생한 슈니의 활약</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">18시간 전</span>
+                                                            <span class="source"><span class="source_inner">급식슈니</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group_theme" data-block-id="" data-block-code="PC-THEME-BBOOM-IMG-1" data-block-type="MATERIALS" data-template-code="3X3" data-page="1">
+                                    <div class="media_view_wrap type_column">
+                                        <div class="media_view">
+                                            <a href="https://series.naver.com/novel/detail.nhn?productNo=5870080" class="media_area" data-gdid="CAS_19fd9aec-65f7-11eb-99a1-092546e43d83" data-clk="tcc_web.list2cont1" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰10_공녀.PNG" alt="공작님, 제발 제 사표 좀 받아주세요!" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">공작님, 제발 제 사표 좀 받아주세요!</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">어제</span>
+                                                            <span class="source"><span class="source_inner">공녀</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_86a3bb8f-65e7-11eb-a31a-5b9092e3142c" data-clk="tcc_web.list2cont2" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰11_반귀.PNG" alt="나에게만 보이는 그 사람" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">나에게만 보이는 그 사람</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">18시간 전</span>
+                                                            <span class="source"><span class="source_inner">반귀</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_3b16ff33-6603-11eb-99a1-f5c4d82907fd" data-clk="tcc_web.list2cont3" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰12_요리GO.PNG" alt="세자 원픽 그녀의 '간택 떨어지기 대작전'?" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">세자 원픽 그녀의 '간택 떨어지기 대작전'?</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">어제</span>
+                                                            <span class="source"><span class="source_inner">요리대전</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_86a3bb8e-65e7-11eb-a31a-09620c53c936" data-clk="tcc_web.list2cont4" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰13.jpeg" alt="전설적인 사채업자의 손자, 다른 인생을 꿈꾸다" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">전설적인 사채업자의 손자, 다른 인생을 꿈꾸다</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">18시간 전</span>
+                                                            <span class="source"><span class="source_inner">사채왕의 천재손자</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_14da1781-65e7-11eb-aec9-c39079cc1f3b" data-clk="tcc_web.list2cont5" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰14.jpeg" alt="제가 어찌 이 학교에…?" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">제가 어찌 이 학교에…?</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">어제</span>
+                                                            <span class="source"><span class="source_inner">과학고 생존일지</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_86a3bb8d-65e7-11eb-a31a-c93cc5aaece7" data-clk="tcc_web.list2cont6" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰15.jpeg" alt="무명배우인 내가 자고 일어났더니 실검 1위?!" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">무명배우인 내가 자고 일어났더니 실검 1위?!</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">18시간 전</span>
+                                                            <span class="source"><span class="source_inner">벼락스타</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_8046781b-65e5-11eb-a31a-53ce3dfa17b3" data-clk="tcc_web.list2cont7" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰16.jpeg" alt="삼삼한 작물들이 펼치는 격정적인 막장 집합쇼~!" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">삼삼한 작물들이 펼치는 격정적인 막장 집합쇼~!</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">어제</span>
+                                                            <span class="source"><span class="source_inner">감자마을</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_3b16ff34-6603-11eb-99a1-a11082b54ef9" data-clk="tcc_web.list2cont8" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰17.jpeg" alt="목숨같이 지켜야 할 사람이, 내게 생겼으니.." width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">목숨같이 지켜야 할 사람이, 내게 생겼으니..</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">어제</span>
+                                                            <span class="source"><span class="source_inner">다비, 아찔하게 흐르는</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="media_area" data-gdid="CAS_14da177f-65e7-11eb-aec9-4f02be2902fd" data-clk="tcc_web.list2cont9" target="_blank">
+                                                <div class="media_thumb">
+                                                    <img src="웹툰18.jpeg" alt="마이웨이 20대 청춘이야기" width="232" height="130" loading="lazy">
+                                                    <span class="thumb_bd"></span>
+                                                </div>
+                                                <div class="media_info">
+                                                    <div class="info_box">
+                                                        <strong class="title elss">마이웨이 20대 청춘이야기</strong>
+                                                        <div class="source_wrap">
+                                                            <span class="date">어제</span>
+                                                            <span class="source"><span class="source_inner">스물여섯</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_more_wrap">
+                                    <button type="button" class="btn_more" data-clk-custom="tcc_web.more" data-next-page="2"><i
+                      class="ico_more"></i>새로운 글 더보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="NM_INT_RIGHT" class="column_right">
+                    <div class="column_fix_wrap">
+                        <div id="da_brand"></div>
+                        <div id="account" class="sc_login">
+                            <h2 class="blind">로그인</h2>
+                            <p class="login_msg">네이버를 더 안전하고 편리하게 이용하세요</p>
+                            <a href="http://127.0.0.1:8000/login/" class="link_login" data-clk="log_off.login"><i class="ico_naver"><span
+                    class="blind">네이버</span></i>로그인</a>
+                            <div class="sub_area">
+                                <div class="look_box">
+                                    <a class="link_look" data-clk="log_off.searchid">아이디</a>
+                                    <a class="link_look" data-clk="log_off.searchpass">비밀번호찾기</a>
+                                </div>
+                                <a class="link_join" data-clk="log_off.registration">회원가입</a>
+                            </div>
+                        </div>
+                        <div id="timesquare" class="sc_timesquare">
+                            <h2 class="blind">타임스퀘어</h2>
+                            <div class="card_wrap">
+                                <div class="card_nav">
+                                    <a role="button" class="btn_nav btn_prev" data-clk="squ.pre"><span
+                      class="blind">이전</span></a>
+                                    <a role="button" class="btn_nav btn_next" data-clk="squ.next"><span
+                      class="blind">다음</span></a>
+                                </div>
+                                <div id="NM_TS_ROLLING_WRAP" style="height: 100%;" data-nm-ui="rolling">
+                                    <div class="eg-flick-viewport" style="position: relative; z-index: 0; overflow: hidden; min-height: 100%; width: 100%; touch-action: pan-y; user-select: none; -webkit-user-drag: none; height: 47px;">
+                                        <div class="eg-flick-camera" style="width: 100%; height: 100%; will-change: transform; transform: translate3d(0px, 0px, 0px);">
+                                            <div style="width: 281px; position: absolute; left: 0px;" class="eg-flick-panel">
+                                                <a data-clk="squ.dust" class="card_air">
+                                                    <ul class="list_air">
+                                                        <li class="air_item">미세<strong class="state state_good">좋음</strong></li>
+                                                        <li class="air_item">초미세<strong class="state state_normal">보통</strong></li>
+                                                    </ul>
+                                                    <span class="location">지정면</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="veta_branding"> <iframe id="da_iframe_rolling" name="da_iframe_rolling" data-veta-preview="main_rolling" title="광고" width="350" height="200" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" src="ad2.jpg"></iframe> <span class="veta_bd_t"></span>                            <span class="veta_bd_b"></span> <span class="veta_bd_l"></span> <span class="veta_bd_r"></span> </div>
+                        <div id="shopcast" class="sc_shopcast"> <iframe id="shopcast_iframe" title="쇼핑캐스트" width="350" height="1539" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" src="https://castbox.shopping.naver.com/shoppingboxnew/main.nhn"></iframe> </div>
+                    </div>
+                </div> <a id="NM_scroll_top_btn" href="#wrap" class="content_top"><span class="blind">TOP</span></a> <button id="NM_darkmode_btn" type="button" role="button" class="btn_theme" aria-pressed="false"> <span
+            class="blind">라이트
+            모드로 보기</span> </button>
+            </div>
+            <div id="footer" role="contentinfo">
+                <div class="footer_inner">
+                    <div class="banner_area">
+                        <div class="da_box_wrap">
+                            <div id="da_public_left"> <iframe id="da_iframe_bottom_left" title="광고" width="350" height="86" scrolling="no" frameborder="0" src="https://siape.veta.naver.com/fxshow?su=SU10641&amp;calp=1&amp;nrefreshx=1"></iframe>
+                            </div>
+                            <div id="da_public_right"> <iframe id="da_iframe_bottom_right" title="광고" width="350" height="86" scrolling="no" frameborder="0" src="https://siape.veta.naver.com/fxshow?su=SU10642&amp;calp=1&amp;nrefreshx=1"></iframe> </div>
+                            <div id="veta_time2"> <iframe id="da_iframe_below" name="da_iframe_below" data-veta-preview="main_below" width="350" height="86" scrolling="no" frameborder="0" title="광고" src="https://siape.veta.naver.com/fxshow?su=SU10640&amp;calp=1&amp;nrefreshx=1"> </iframe>                                </div>
+                        </div>
+                    </div>
+                    <div class="notice_area" data-clk-prefix="ntc">
+                        <div class="notice_box">
+                            <h3 class="title"><a>공지사항</a> </h3>
+                        </div> <a class="link_all" data-clk="svcmap">서비스 전체보기</a>
+                    </div>
+                    <div class="aside_area">
+                        <div class="partner_box_wrap">
+                            <div class="partner_box" data-clk-prefix="crt">
+                                <h3 class="title">Creators</h3> <a class="link_partner" data-clk="creator">크리에이터</a> <a class="link_partner" data-clk="smbusiness">스몰비즈니스</a>
+                            </div>
+                            <div class="partner_box" data-clk-prefix="crt">
+                                <h3 class="title">Partners</h3> <a class="link_partner" data-clk="service">비즈니스 · 광고</a> <a class="link_partner" data-clk="store">스토어 개설</a> <a class="link_partner" data-clk="place">지역업체 등록</a> <a class="link_partner" data-clk="expert">엑스퍼트 등록</a>
+                            </div>
+                            <div class="partner_box" data-clk-prefix="crt">
+                                <h3 class="title">Developers</h3> <a class="link_partner" data-clk="center">네이버 개발자 센터</a> <a h class="link_partner" data-clk="openapi">오픈 API</a> <a class="link_partner" data-clk="opensource">오픈소스</a> <a class="link_partner" data-clk="d2">네이버
+                  D2</a> <a class="link_partner" data-clk="naverD2SF">네이버 D2SF</a> <a class="link_partner" data-clk="labs">네이버 랩스</a>
+                            </div>
+                        </div>
+                        <div class="service_box_wrap">
+                            <div class="service_box" data-clk-prefix="wbd">
+                                <a class="service_logo" data-clk="bt"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAC91BMVEUAAACE1dAbf6jE1Nq/z9e82drQ3OG7ytOzws+6x9QNs7MeLpQSx60QrLAfL50gMakTxKyzwc8fMacSr6yywc8fMKIdLYzJ1d4KrrW6ydMJrrUbr6QgMKW2xNEcr6W7ydUfL5cIr7XBztgMtbMeL50fMaQQzrI0tK4cLIQUvqsVvqofMKLL0eGzxM+4xtIZuKcJr7XCyNt0xsILsLW1w9AdLYZwvL8gMaoeLY6CzMceLYyxz9fI1d0JwLMeLY4KrbXFzeAgMqvN2OEIrLUGsrVIurMfLpAcLIIIsbVWs7MeLpXIzt0UvakgMqwfL5x4wcEJsLYfMagWt6k6qqoil6DV2+UdK4EeMoEfLpOzws4/s7YgMacXvqoC27QcK38B17TE1dobKW0bKnID0bTP3OACzrQcKngcLIMbKXAD07QeLYfi6uzY4+YfLpDN2+DK2d0cK3zU4eTS3+IFzLQeL5ccKnXk7O7G19wgMJ3R3uHa5ejL2t7c5unI2Nzg6esBxrMfMKPp7vEeLYrr8fMNr7X2+PkeLYzt8vQE2LTx9fYfLpPz9/gHyLMOsrUHr7UCybQLs7YKu7UIuLUFvLQGwbUIxbQGw7QcKnTZ5OfV4uUJv67e5+rd5+rl7e8Ju6z3+vvm7vDp8PHs8vPw9fbv9PUgMaj6/PwgMqwJs6kNw7AFubULtrUGtbUJvrQEv7QAwq8MrqYKuKsKtqn+/v4Osaf7/P0K1rMHq6UeqKQNqKQhNoIgSH0Vvqoie5MhWIdV3cAcsaYhhZoglJkdLXnJ7+ia5tU61rgp1rceoKIhb4whZYgcM3fj9vJw3sdJx7xtd6sXt6hCT5AvPpAfPYQbKIMcJ34fP3q+8uSy49ux0tWd2NKYzM+A48yE08t6xchdv8FP0b1zfbcSpKIgToEbJ3nE5OG12Nmn19WM5tGKk8ehqMZlxcJJuLwgtLcbvbYc2bUTtaknNpA1Q4bZ7uuzuNuP3M9p0cNfbLUKtq5IVqk8Sp8jZpxaZZrUCA9eAAAAXXRSTlMABAj99BcO6IpfLhj9hPLp5ryyq6ZzXDnd2cuYkHtzbFFOQj0yJv76+ebc29fXx8TCuJuVlIqHgX5gPS0kEvn49/f08O3t6+fj2tLR0MzGeGNfWvbz7sXBpYN4PB4CDkIdAAAFcUlEQVRo3q3TdVwTYRjA8eeI0SKgYnd3d3d362tgO7u7Y4rd3d2K4pwwQkAQJUSxu7vbPzwYg9vufe+eO/neP9vtPr/n7t53gFMobxXPVu719pu4t/LM2a4gBwioeGZP9/0U9TyrFEyHepUSeyW45+wB/8GmXetZskpkdlGbz+w+CyVDThdV+QyT0FSMyFtikiIZMnOggIvnOMWaFwS0LBkkQj/q/mL8UpVDvv2ui6V89XvF+qm1C2rnNx8u6ferq8zfGlcHWdUbD/8PtbPI7p7aC5R49Mn6TFWZ5Z2jzKNPolOVJPtD04HEhLxFh6YH5lsqWHQQ1dVBCjFW2qUJo+8Xq3BAUeputenci27Qo6u9FGpC+8dV6pUODAZDQkKCwdAFRNz+s2wMiYwbQkwi7oWVBCvOHUep9yQkTkfMIsIv+/HygKVigaPoYuMFX+InGEQXJIS4kjRBN/b5JZutAaHcxDhQ3gVD7AWrU0a9TpgPO5OqnMUOciWJA9O8jh+IYwwmAhE39gnMrwFpchByQXCjn/kvCOf1ROil7z4LgnWuVZiQ8UpFh/gTgYs3tlvzFj4AiVbYN7oSoaDL20VaQAou6drE9UpcCCUWruyeL+ZbM3UL8Yw+YrHD4n2ozgdY9X3n05g3UnHCC6R0Xvv9pfaj/ImFoN3zqbQcJOlJkugpofWfafnoSGIp4rIvg5N5iXn+0aIS7vUQ/zBfFtMyFyPJogajXOpHrIQvYprNJf0JiEkAJu8TQqwF7VnE5mTaQyaX5PvRwUQkbLeEpH1UhqRw9ZHrP3ElInf3SOkEABmJWWhfaVG9iciHywulzNWAjY6kuiSV9wklFOELpeWHAsINZ2T3+d1JcXHrLmkVITcRGMJ8hsDehCZ8rozSkINYCKTmn8QRQn8AuQElwYtYCj4vyieG6gjdy51y6kMZYkUXmmj58kP9CcOHL7PlaKElEdEFR5031wPjCNvd2fKgOKHqF6CP1AeI7j1k+PA/aSfDdsiDjESBgDm8SJIiaCuCsgH6a7xAkuLmBASFA67zzAMuanEDdAoUHvX06dNgncldLQYU763Ex6hLkebPz7TaCfIHtOyt0kMtCpRROyAc1R8GXvy1Q1Qc/htmYNQFtyHqXEH1N2eD9ioH3NyM4gHO/VSJ2IKTC7ixqgZ8m4bjDVBMTb/waFx/IwfgNUCFK1NwHACgvZoBN5EDMgGAzRJWZSyz/3ADkjfwGo1V7PYwnPoc8MovZ2Dll18cjRzgAUnsDy5hYE24NwwpPyRrNJNuOcOSZxtx7MCk2kG6JQzfRyM5Qooix2lmsjxH9qdqIEX5TTRrGR6OQcoEZlwRSp/5BC/GjEYdI+whVfltYgfX0sXgH0CgiKh/fB3D7ck4thoQqHbS2kFGP2YyUi6w0OyUpW1rGG73x3HgwIJ98AGhU0cZ/Rhkf2oNsNLGYsC2YwwvkAMcQaTZ6TQfjzK8QfazcSDCdTiRajXD++cjUOzsgaKG3tz/uZLhHq4/PT9QVTt3NtmB1QwxI3EDnIChzeNzvLMrGd7fmoriCEyVH/P9Qyx3cP2KAJITDq9iuD8SxREkdT/C6j+Yjup3A0nOTQ8zPJiIyds6gaQCDY8wvJk4HcHOGyS1XbqC4f50jNL2IMWmwlKGd3cmItjmknn92VcwvL2F6ZeqKX37bszbv98HwU5mdfNlncfw4FYf3kSpg887aqQ3T1lW/u2dPnLk8/nKLmMoW9nDVjZfyomTzjdl1BtWcAYA+zylpGY4ONYEOc5u2evMs5a1QoHU+9I4ZXKwpcU98tgDDufc1s0re9YGdZYta5A1u5dbvlpgReOdp6JHNgc7fpCtnUO20ply5UfG/wEFXaai/lOVTwAAAABJRU5ErkJggg=="
+                                        alt="웨일" width="48" height="48"> </a>
+                                <div class="service_info"> <strong class="title">웨일 브라우저</strong> <a class="dsc" data-clk="bt">다운받기</a> </div>
+                            </div>
+                            <div class="service_box" data-clk-prefix="prj">
+                                <a class="service_logo" data-clk="link"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABkCAMAAAA47XeXAAAAgVBMVEUAAADN5PdGm99Gm99Gm99Gm99Gm95Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gmt9Gm99Gm99Gm99Gm95Gm99Gm99Gm95Gm99Hm99Gm99Gm9/////3+/5cp+LO5PfR5/fO5fdcp+P7/f/zv5GhAAAAInRSTlMA/v7vH9u5qJNgGwb6l8a9uqF9WFUyLxYMCtbVmLCwe4OCj8gzEgAAA0NJREFUaN7NmmFz4iAQhkkwMTHGWrWtWvWuq8mF+/8/8Ey2nb0OhSwQZnw+MHQ7pbjAy2s2gsuiLPJMLpcyy4tyISZltnmHbxw3MzEVr/MUNNL5q5iCt2ccXCN9fhPB7CQYkTsRRlWDlboSAexzGCHfC28OKxhldfDOzBMwePLNTw0sauHFFphshQcLCUwkaQRfXYBPSkrEUBdv3jezcXXhw1ciUhc+fCUidQlH7qzqEk5d2dQlnHxvU5dwVgdXdSGclaiGyamt6hLO1qIu4ZASzcFE092SBprk1jagulvXAAw/qb5N7m176xQYmOPoLymYaK/X65/PNhlagE6LGUhfRM8FjNzuf/73//bHmInzoJEpjMyeWpp9RzGz/PT6+QvMNO2Q+67PPeYZY5h7jDVg5OM+/BGikd13JfDAj/Ad1WLMyEyUwKPT00ypN1GKAljQJtFiFgqRe86eYhbWIvPPPR5d+9pKiIgUwKNJdHXBvW9jyRye1EWLWYfnJcd141Byspizz7gbUyWDuqiW0v15D9g3ZgF86JwyKUgUHJaATUmS5rsEdkkTZLjZS8Alw+skFr8Nl6H6uosShaKOp3Zo+/jgFTDe+wcSfv0yFGfQaLX7tDO0reXOPRuMCG4Q11Y3IiYblWgzS7R+h31qdRtlGB7zikeUckz+AB3a8FuMqD7Cd2nhUHLOEIkLubQIkEuLxIdwEwUy3HyXxsbgPMJcGuGox+TSIugxuTQ+KHIaAS5N92eIIuMT5tJoPfHy5q9yKoXLelLuKRri0mjMQdhwTPw6Sv8pzKXhFyhNilEwkSCXRrnAnaPnJdyl0UrqXircpeHVglnv+62K4NJo3lFcGmWd79KO7OQoXAE8XNO6tIQGxj7fpfHTwk8RubQLWEGvgTNGKzj01fixunCMCCYcvSSlaFwUyKVx86J3bczpUR3zimq1LqdosAUbJF54ar+uk5Gju436mPTk8ZAXFdO93HRYTesUVgf3B+y0XdxLfdVputmfKp/iBtNjyl3c0kzUwtJIWewIPvAL9LOyWLsV9WAps3VRzh6hJBm3oOqsRKfHLGYzS/GP+iLBuBKdqkd+iWPkFZTHf4Em4us/uhI5qss/6zK5u8+AXpwAAAAASUVORK5CYII="
+                                        alt="꽃" width="47" height="50"> </a>
+                                <div class="service_info"> <strong class="title">프로젝트 꽃</strong> <a class="dsc" data-clk="link">바로가기</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="corp_area" data-clk-prefix="plc">
+                        <h3 class="blind">네이버 정책 및 약관</h3>
+                        <ul class="list_corp">
+                            <li class="corp_item"><a data-clk="intronhn">회사소개</a></li>
+                            <li class="corp_item"><a data-clk="recruit">인재채용</a>
+                            </li>
+                            <li class="corp_item"><a data-clk="contact">제휴제안</a>
+                            </li>
+                            <li class="corp_item"><a data-clk="service">이용약관</a></li>
+                            <li class="corp_item"><a data-clk="privacy"><strong>개인정보처리방침</strong></a></li>
+                            <li class="corp_item"><a data-clk="youth">청소년보호정책</a></li>
+                            <li class="corp_item"><a data-clk="policy">네이버 정책</a></li>
+                            <li class="corp_item"><a data-clk="helpcenter">고객센터</a></li>
+                        </ul>
+                        <address class="addr"><a target="_blank" data-clk="nhn">ⓒ NAVER Corp.</a>
+            </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
